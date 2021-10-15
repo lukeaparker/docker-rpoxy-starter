@@ -9,14 +9,17 @@ Download docker desktop
 Find your known hosts file on your system and add the following 
 
 0.0.0.0 appa.test.com
+<br>
 0.0.0.0 appb.test.com
 
 ## Step 3 
 Navigate to the root of the repository and run 
+<br>
 docker-compose up --build
 
 ## Step 4
-Visit appa.test.com
+Visit appa.test.com 
+<br>
 Visit appb.test.com
 
 ## Conclusion 
