@@ -3,10 +3,10 @@ FROM python:3.7-slim-buster
 
 
 # Step 2: Copy the code into a folder named app
-COPY app-b/ /app-b 
+COPY appb/ /appb 
 
 # Step 3: Switch the working directory to app
-WORKDIR /app-b
+WORKDIR /appb
 
 # Step 4: Download dependencies 
 RUN pip3 install flask 

@@ -7,13 +7,13 @@ services:
     volumes:
       - ./proxy/nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - app-a
-      - app-b
-  app-a:
+      - appa
+      - appb
+  appa:
     hostname: appa
     build:
       context: .
-      dockerfile: app-a/Dockerfile
+      dockerfile: appa/Dockerfile
     entrypoint:
       - flask
       - run
@@ -23,11 +23,11 @@ services:
     ports:
       - ${APPA_PORT}:${APPA_PORT}
     volumes: [".:/app"]
-  app-b:
+  appb:
     hostname: appb
     build:
       context: .
-      dockerfile: app-b/Dockerfile
+      dockerfile: appb/Dockerfile
     entrypoint:
       - flask
       - run
